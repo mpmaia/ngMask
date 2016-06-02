@@ -66,6 +66,10 @@
               });
             },
             post: function($scope, $element, $attrs, controller) {
+              
+              if(!promise) 
+                return;
+
               promise.then(function() {
                 // get initial options
                 var timeout;
